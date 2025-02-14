@@ -16,8 +16,7 @@ public class Book {
     private String title;
     private String author;
     private String genre;
-    @Column(nullable = false, unique = true)
-    private String Isbn;
+    private String isbn;
     private Date publishedDate;
     private Integer totalCopies;
     private Integer availableCopies;
@@ -29,7 +28,7 @@ public class Book {
         this.title = title;
         this.author = author;
         this.genre = genre;
-        Isbn = isbn;
+        this.isbn = isbn;
         this.publishedDate = publishedDate;
         this.totalCopies = totalCopies;
         this.availableCopies = availableCopies;
@@ -72,11 +71,11 @@ public class Book {
     }
 
     public String getIsbn() {
-        return Isbn;
+        return isbn;
     }
 
     public void setIsbn(String isbn) {
-        Isbn = isbn;
+        isbn = isbn;
     }
 
     public Date getPublishedDate() {
