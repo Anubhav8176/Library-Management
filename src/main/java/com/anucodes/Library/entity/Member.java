@@ -27,6 +27,10 @@ public class Member {
         this.membershipDate = membershipDate;
     }
 
+    public Member() {
+        
+    }
+
     public Long getId() {
         return id;
     }

@@ -18,7 +18,7 @@ public class BookServices {
     private BookRepository bookRepository;
 
     //Add New Book
-    public Boolean   addNewBook(BookDto bookDto){
+    public Boolean addNewBook(BookDto bookDto){
         if (Objects.equals(bookDto.Isbn(), "")){
             return false;
         }

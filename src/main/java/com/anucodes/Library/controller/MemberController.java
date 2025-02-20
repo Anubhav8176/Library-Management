@@ -25,7 +25,7 @@ public class MemberController {
     public ResponseEntity getAllMember(){
         try {
            List<MemberDto> member =  memberServices.getAllMembers();
-           return new ResponseEntity(member, HttpStatus.OK);
+           return new ResponseEntity<>(member, HttpStatus.OK);
         } catch (RuntimeException e) {
             throw new RuntimeException(e);
         }
